@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# MINERVA-InfoCost
-# Stage 3B: MetaQA R=100, five evaluation seeds
+# MINERVA-ActionComm
+# Stage 3B: MetaQA R=100, five execution seeds
 # CPU-only. Uses Conda environment: minerva_tf2
 #
 # WARNING:
@@ -14,16 +14,16 @@ set -euo pipefail
 #   Top-K K=4
 #   numpy_policy
 #
-# Seeds: 42, 43, 44, 45, 46
+# Execution seeds: 42, 43, 44, 45, 46
 #
 # Run from the repository root:
 #   bash 04_run_metaqa_multiseed_r100.sh
 
-echo "=== Stage 3B: MetaQA R=100 multi-seed ==="
+echo "=== Stage 3B: MetaQA R=100 execution-seed sweep ==="
 
 for s in 42 43 44 45 46; do
   echo
-  echo ">>> MetaQA | R=100 | seed=${s}"
+  echo ">>> MetaQA | R=100 | execution seed=${s}"
   conda run -n minerva_tf2 bash run_rate_sweep.sh configs/metaqa.yaml \
     --rate_test_rollouts 100 \
     --rate_top_k 2 4 \
