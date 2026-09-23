@@ -1,1 +1,1 @@
-"""Regression tests for MINERVA-InfoCost evaluation helpers."""
+"""Regression tests for MINERVA-ActionComm evaluation helpers."""
