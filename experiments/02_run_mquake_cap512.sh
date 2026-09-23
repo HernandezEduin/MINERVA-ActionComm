@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# MINERVA-InfoCost
+# MINERVA-ActionComm
 # Stage 2: MQuAKE action-cap sensitivity at max_num_actions=512
 # CPU-only. Uses Conda environment: minerva_tf2
 #
