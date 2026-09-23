@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# MINERVA-InfoCost
+# MINERVA-ActionComm
 # Stage 1: Full-dataset single-trajectory evaluation (R=1)
 # CPU-only. Uses Conda environment: minerva_tf2
 #
