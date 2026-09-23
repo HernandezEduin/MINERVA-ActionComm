@@ -13,15 +13,15 @@ export CUDA_VISIBLE_DEVICES=""
 
 configs=(
   configs/kinshiphinton.yaml
-  configs/metaqa.yaml
   configs/mquake_st_single.yaml
   configs/mquake_st_multi.yaml
+  configs/metaqa.yaml
 )
 labels=(
   "Kinship | cap=100"
-  "MetaQA | cap=200"
   "MQuAKE-ST Single | cap=200"
   "MQuAKE-ST Multi | cap=200"
+  "MetaQA | cap=200"
 )
 
 echo "=== Post-review primary matrix: R=100, seed=42 ==="
