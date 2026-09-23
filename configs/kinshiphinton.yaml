@@ -19,7 +19,7 @@ train_entity_embeddings: True
 train_relation_embeddings: True
 print_predictions: False
 question_tokenizer_name: "bert-base-uncased"
-use_beam: False # Off for SPAWC
+use_beam: False # Beam is enabled explicitly by evaluation wrappers when needed
 use_entity_embeddings: False
 vocab_dir: "${data_input_dir}vocab"
 
