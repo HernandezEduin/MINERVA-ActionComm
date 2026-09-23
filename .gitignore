@@ -6,4 +6,5 @@
 .cache/*
 /datasets/*
 /saved_models/*
+/experiment_logs/*
 minerva.zip
